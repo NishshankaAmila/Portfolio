@@ -16,7 +16,7 @@ body{
     background-position: center;
 }
 .container{
-    padding: 10px 10%;
+    padding: 5px 3%;
 }
 nav{
     display: flex;
@@ -25,7 +25,7 @@ nav{
     flex-wrap: wrap;
 }
 .logo{
-    width: 140px;
+    width: 100px;
     border-radius: 80px;
 }
 nav ul li{
@@ -37,13 +37,29 @@ nav ul li a{
     color: #fff;
     text-decoration:dotted;
     font-size: 18px;
+    position: relative;
 }
 nav ul li a::after{
     content: '';
-    width: 100%;
+    width: 0;
     height: 3px;
     background: #ff004f;
     position: absolute;
     left: 0;
     bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 10%;
+    font-size: 20px;
+}
+.header-text h1 span{
+    font-size: 57px;
+    color: #ff004f;
+}
+.header-text p{
+    color: rgb(179, 189, 179);
 }
