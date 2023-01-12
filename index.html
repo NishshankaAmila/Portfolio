@@ -43,9 +43,9 @@
                         I am studing<h3 class="spe">BSc (Hons) in Information Technology</h3>degree.
                     </p>
                     <div class="tab-title">
-                        <p class="tab-links active-link" onclick="opentab(skill)">Skills</p>
-                        <p class="tab-links" onclick="opentab(Experience)">Experience</p>
-                        <p class="tab-links" onclick="opentab(Education)">Education</p> 
+                        <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p> 
                     </div>
                     <div class="tab-conte active-tab" id="skill">
                         <ul>
@@ -81,9 +81,13 @@
         for(tablink of tablinks){
             tablink.classList.remove("active-link");
         }
-        
-        event.currentTarget.classList.add("active-link");
+        for(tabcon of tabcont){
+            tabcon.classList.remove("active-tab");
+        }
+         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+        
+       
     }
 </script>
 </body>
