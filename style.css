@@ -43,7 +43,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #f0158d;
+    background: #ff004f;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -58,7 +58,7 @@ nav ul li a:hover::after{
 }
 .header-text h1 span{
     font-size: 57px;
-    color: #f0158d;
+    color: #ff004f;
 }
 .header-text p{
     color: rgb(179, 189, 179);
@@ -88,7 +88,7 @@ nav ul li a:hover::after{
     font-weight: 10px;
 }
 .spe{
-    color: #f0158d;
+    color: #ff004f;
     font-style: italic;
 }
 .tab-title{
@@ -106,7 +106,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #f0158d;
+    background: #ff004f;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -126,7 +126,7 @@ nav ul li a:hover::after{
    
 }
 .tab-conte ul li h3{
-    color: #f0158d;
+    color: #ff004f;
     font-style: italic;
 }
 .p{
@@ -157,6 +157,7 @@ nav ul li a:hover::after{
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
 }
 .services-list div i{
     font-size: 50px;
@@ -175,4 +176,8 @@ nav ul li a:hover::after{
     margin-top: 20px;
     display: inline-block;
 
+}
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
 }
